@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title> DOM Input Checkbox disabled Property </title>
+</head>
+
+<body style="text-align:center;">
+
+	<h5> Enable and Disable TextBox </h5>
+	<input type="text" id="yourText" disabled />
+	<input type="checkbox" id="yourBox" />
+	<!-- Script to disable checkbox -->
+	<script>
+	document.getElementById('yourBox').onchange = function() {
+		document.getElementById('yourText').disabled = !this.checked;
+	};
+	</script>
+</body>
+
+</html>
